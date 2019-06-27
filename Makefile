@@ -4,7 +4,7 @@ P=5000
 
 run:
 	docker run -d \
-	-e REGISTRY_HTTP_ADDR=0.0.0.0:5001 \
+	-e REGISTRY_HTTP_ADDR=0.0.0.0:$P \
 	-p $P:$P \
 	--restart=always \
 	--name $(REG_NAME) \

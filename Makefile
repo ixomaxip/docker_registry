@@ -9,6 +9,7 @@ run:
 	--restart=always \
 	--name $(REG_NAME) \
 	-v $(REG_PATH):/var/lib/registry \
+	-v `pwd`/config.yml:/etc/docker/registry/config.yml \
 	registry:2
 
 stop:

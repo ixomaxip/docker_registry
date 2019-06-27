@@ -17,3 +17,5 @@ stop:
 
 rm:
 	docker container rm -v $(REG_NAME)
+sh:
+	docker exec -ti $(REG_NAME) sh
